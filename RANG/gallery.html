@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - RANG.IN</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+  
+  <!-- Header & Navigation -->
+  <header>
+    <div class="header-container">
+      <h1 class="logo">RANG<span>.IN</span></h1>
+      
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="artists.html">Artists</a>
+        <a href="our-story.html">Our Story</a>
+        <a href="login.html" class="login-btn">Log In</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Gallery Header -->
+  <section class="gallery-hero">
+    <h1 class="gallery-title">THE GALLERY</h1>
+    <p class="gallery-subtitle">Browse our curated collection of authentic Madhubani paintings, each telling a unique story of culture and tradition.</p>
+  </section>
+
+  <!-- Filters -->
+  <section class="gallery-filters">
+    <div class="filter-container">
+      <input type="text" class="search-box" id="searchBox" placeholder="Search by title, story, or artist...">
+      
+      <select class="category-dropdown" id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="madhubani">Madhubani paintings</option>
+        <option value="mithila">Mithila Painting</option>
+        <option value="madhubani-products">Madhubani products</option>
+        <option value="saree">Saree</option>
+        <option value="kurti">Kurti</option>
+        <option value="kurta">Kurta</option>
+        <option value="bamboo">Bamboo Craft</option>
+        <option value="folk">Folk Art</option>
+        <option value="earthen">Earthen pots</option>
+        <option value="mythology">Mythology</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section class="gallery-section">
+    <div class="gallery-grid" id="galleryGrid">
+      
+      <!-- Gallery Item 1 -->
+      <div class="gallery-item" data-category="madhubani">
+        <div class="gallery-image">
+          <img src="https://instagram.fpat3-2.fna.fbcdn.net/v/t1.15752-9/629528562_908211105019786_5965833044088085345_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=104&ccb=7-5&_nc_sid=fc17b8&efg=eyJxZV9ncm91cHMiOlsiaWdkX2Jlc3RfZWZmb3J0X2ltYWdlOnRlc3QiXX0%3D&_nc_ohc=zCsIKTNDmioQ7kNvwGWHZAj&_nc_oc=AdmewCs58zofOsVATotAaFn4rKp82c3OxGn4Xvg1oBIot8lBxJHuE6T9XqrqvBW9q8Aanvud3n4twBhDVoRXFY13&_nc_zt=23&_nc_ht=instagram.fpat3-2.fna&oh=03_Q7cD4gH9crmTM0UnlK-D02SC9h6-51TW6_sYdL9RVT0iBcjtQg&oe=69B96C09" alt="Madhubani Painting (Ram-Sita vibha)">
+          <div class="gallery-overlay">
+            <button class="btn-view">View Details</button>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <h3>Ram-Sita Vivha</h3>
+          <p class="artist-name">By Kundan Singh</p>
+          <p class="price">₹25,000</p>
+        </div>
+      </div>
+
+      <!-- Gallery Item 2 -->
+      <div class="gallery-item" data-category="mithila">
+        <div class="gallery-image">
+          <img src="https://instagram.fpat3-3.fna.fbcdn.net/v/t1.15752-9/615212972_741155722131893_1412682889349793012_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=106&ccb=7-5&_nc_sid=fc17b8&efg=eyJxZV9ncm91cHMiOlsiaWdkX2Jlc3RfZWZmb3J0X2ltYWdlOnRlc3QiXX0%3D&_nc_ohc=81VdNGa074MQ7kNvwHmc2D1&_nc_oc=Adlyjnw7OS0KOTWKveSXcfLTpDSAXxwVftu90peYm6l2LUxvlmX12-elDe0jOWkaGrGjlkN7hUdfv79CxZzM7yG7&_nc_zt=23&_nc_ht=instagram.fpat3-3.fna&oh=03_Q7cD4gHpqU2wh7TGe7w7o3FlZ-Cun0LjR8qBIJ6RPqZtXvYc2w&oe=69B973FA" alt="Man's Kurta">
+          <div class="gallery-overlay">
+            <button class="btn-view">View Details</button>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <h3>Man's Kurta</h3>
+          <p class="artist-name">By Kundan Singh</p>
+          <p class="price">₹18,000</p>
+        </div>
+      </div>
+
+      <!-- Gallery Item 3 -->
+      <div class="gallery-item" data-category="folk">
+        <div class="gallery-image">
+          <img src="https://scontent.cdninstagram.com/v/t51.71878-15/536495736_704487092621281_6129662969234698962_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmciOiJDTElQUy5pZ19zaGltX3JlYWQuNjQweDExMzYuQzMifQ%3D%3D&_nc_ohc=lBeYuTzLGtcQ7kNvwGZ89yX&_nc_oc=AdkFaTcUwwCJ3KiHdmiGdp27Jz8KjeHEDKOGE3NRWwj_fRJ9gN1zr7BwFLIlght7qh8qONPrNcfY3z0XVRMvioiC&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=oFvYIAZpBoB6SRKtyCuKqQ&oh=00_AfustOpHKi-RxJmxsJzPDakR76CgPhoWUAiC4uUyPbv2zQ&oe=6997D917&ig_cache_key=MzcwMzMxMzExMzEzMjMyODExMg%3D%3D.2-ccb7-5" alt="BAG">
+          <div class="gallery-overlay">
+            <button class="btn-view">View Details</button>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <h3>BAG</h3>
+          <p class="artist-name">By Ankit priyadarshi</p>
+          <p class="price">₹22,000</p>
+        </div>
+      </div>
+
+      <!-- Gallery Item 4 -->
+      <div class="gallery-item" data-category="bamboo">
+        <div class="gallery-image">
+          <img src="https://instagram.fpat3-1.fna.fbcdn.net/v/t1.15752-9/623897253_1940524383238695_5332266405704392150_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=103&ccb=7-5&_nc_sid=fc17b8&efg=eyJxZV9ncm91cHMiOlsiaWdkX2Jlc3RfZWZmb3J0X2ltYWdlOnRlc3QiXX0%3D&_nc_ohc=Erzae1ViDYEQ7kNvwGx-b8O&_nc_oc=AdkT_IjunsOFwuZG-Dw8wtP7ub7S-1cTZ-UCUfY-pXz-rrBMctTwZmXETIYn77KAIg94iGWzLUWp3LTCgIURvZzf&_nc_zt=23&_nc_ht=instagram.fpat3-1.fna&oh=03_Q7cD4gEM49LdrRE6LgOattqSMGFoeAZ_birHL34XWFtFHBTpRw&oe=69B97169" alt="Madhubani Painting">
+          <div class="gallery-overlay">
+            <button class="btn-view">View Details</button>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <h3>Madhubani Painting</h3>
+          <p class="artist-name">By Kundan Singh</p>
+          <p class="price">₹5,000</p>
+        </div>
+      </div>
+
+      <!-- Gallery Item 5 -->
+      <div class="gallery-item" data-category="saree">
+        <div class="gallery-image">
+          <img src="https://instagram.fpat3-2.fna.fbcdn.net/v/t1.15752-9/625024370_901252995716394_7052662718137378738_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=108&ccb=7-5&_nc_sid=fc17b8&efg=eyJxZV9ncm91cHMiOlsiaWdkX2Jlc3RfZWZmb3J0X2ltYWdlOnRlc3QiXX0%3D&_nc_ohc=0cXw-oz-oX0Q7kNvwFyuNJb&_nc_oc=AdnaLeOstyb3G81a59s3Pf5ZpurCs-w9niYAj1G7YRgWHoJcirbb75NQ_CsaCVKaVgcMwHdG8oOpWsM9v4leFPwI&_nc_zt=23&_nc_ht=instagram.fpat3-2.fna&oh=03_Q7cD4gEv7Ki-MzOb7weVihoQLCCBxN8Nq-5zKa8CpjUimxR-Rw&oe=69B95A53" alt="Radha Krishna Painting">
+          <div class="gallery-overlay">
+            <button class="btn-view">View Details</button>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <h3>Radha Krishna Painting</h3>
+          <p class="artist-name">By Kundan Singh</p>
+          <p class="price">₹12,000</p>
+        </div>
+      </div>
+
+      <!-- Gallery Item 6 -->
+      <div class="gallery-item" data-category="mythology">
+        <div class="gallery-image">
+          <img src="https://scontent.cdninstagram.com/v/t51.82787-15/530485325_18079839878311019_4360141206694093447_n.webp?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmciOiJGRUVELmlnX3NoaW1fcmVhZC4xMDgweDEwODAuQzMifQ%3D%3D&_nc_ohc=GUqETDr7-mkQ7kNvwGXRuSA&_nc_oc=AdnH_y65pb_sRTAmaNsbeAfR9ZlN20VyBgIsJp3CS356nfuyAorAfkmdL4GXPnOhK82ekMn4dUjzh32wTLXDhgff&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=oFvYIAZpBoB6SRKtyCuKqQ&oh=00_AftLPPVW5lsMTPhj5PI0xIkPru5j9I0AWGmCA7DIxHjBSg&oe=6997C166&ig_cache_key=MzY5NzM5NTEwNTY4NTM0MTI5NQ%3D%3D.2-ccb7-5" alt="">
+          <div class="gallery-overlay">
+            <button class="btn-view">View Details</button>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <h3></h3>
+          <p class="artist-name">By Ankit priyadarshi
+</p>
+          <p class="price">₹35,000</p>
+        </div>
+      </div>
+
+      <!-- Add more items as needed -->
+
+    </div>
+
+    <!-- No Results Message -->
+    <div class="no-results" id="noResults" style="display: none;">
+      <p>No paintings found matching your criteria.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3 class="footer-logo">RANG<span>.IN</span></h3>
+        <p>Bringing the ancient heritage of Mithila to the modern world. Every piece tells a story, every purchase empowers an artist.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>QUICK LINKS</h4>
+        <ul class="footer-links">
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="artists.html">Our Artists</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>NEWSLETTER</h4>
+        <p>Subscribe to get updates on new collections and artist stories.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit" class="btn-join">Join</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2025 rang.in. All rights reserved. Made with love in Bihar.</p>
+    </div>
+  </footer>
+
+  <script src="js/index.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

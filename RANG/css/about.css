@@ -1,0 +1,229 @@
+/* About Us Page Styles */
+
+/* About Hero */
+.about-hero {
+  background: linear-gradient(135deg, #f5f0e8 0%, #e8dcc8 100%);
+  padding: 4rem 2rem 3rem;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 3.5rem;
+  color: #991b1e;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.about-subtitle {
+  font-size: 1.3rem;
+  color: #c17817;
+  font-weight: 600;
+}
+
+/* Founder Section */
+.founder-section {
+  padding: 4rem 2rem;
+  background: white;
+}
+
+.founder-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.founder-text h2 {
+  font-size: 2.5rem;
+  color: #991b1e;
+  margin-bottom: 1.5rem;
+}
+
+.founder-text p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #555;
+}
+
+/* What We Do */
+.what-we-do {
+  padding: 4rem 2rem;
+  background: #f5f0e8;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  color: #991b1e;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-box {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.feature-box:hover {
+  transform: translateY(-10px);
+}
+
+.feature-icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.feature-box h3 {
+  font-size: 1.3rem;
+  color: #991b1e;
+  margin-bottom: 1rem;
+}
+
+.feature-box p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* Our Promise */
+.our-promise {
+  padding: 4rem 2rem;
+  background: white;
+}
+
+.promise-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.promise-container h2 {
+  font-size: 2rem;
+  color: #991b1e;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.promise-box {
+  background: #f5f0e8;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.promise-box p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.promise-item {
+  margin-bottom: 2rem;
+}
+
+.promise-item:last-child {
+  margin-bottom: 0;
+}
+
+.promise-item h3 {
+  font-size: 1.3rem;
+  color: #991b1e;
+  margin-bottom: 0.5rem;
+}
+
+.promise-item p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* Mission Statement */
+.mission-statement {
+  padding: 0 2rem 4rem;
+}
+
+.mission-box {
+  max-width: 900px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #991b1e 0%, #7a1518 100%);
+  color: white;
+  padding: 4rem 3rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.mission-box h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.mission-question {
+  font-size: 1.5rem;
+  color: #c17817;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2rem;
+  }
+  
+  .about-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .founder-text h2 {
+    font-size: 2rem;
+  }
+  
+  .founder-text p {
+    font-size: 1rem;
+  }
+  
+  .section-heading {
+    font-size: 2rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .promise-container h2 {
+    font-size: 1.6rem;
+  }
+  
+  .promise-box {
+    padding: 2rem;
+  }
+  
+  .mission-box {
+    padding: 3rem 2rem;
+  }
+  
+  .mission-box h2 {
+    font-size: 1.6rem;
+  }
+  
+  .mission-question {
+    font-size: 1.2rem;
+  }
+}

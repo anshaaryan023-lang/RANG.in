@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - RANG.IN</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  
+  <!-- Header & Navigation -->
+  <header>
+    <div class="header-container">
+      <h1 class="logo">RANG<span>.IN</span></h1>
+      
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="artists.html">Artists</a>
+        <a href="our-story.html">Our Story</a>
+        <a href="login.html" class="login-btn active">Log In</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Login Section -->
+  <section class="login-section">
+    
+    <div class="login-container">
+      
+      <!-- User Type Selection -->
+      <div class="user-type-tabs">
+        <button class="tab-btn active" id="artistTab">🎨 Artist</button>
+        <button class="tab-btn" id="customerTab">🛍️ Customer</button>
+      </div>
+
+      <!-- ARTIST SECTION -->
+      <div class="form-wrapper" id="artistWrapper">
+        
+        <!-- Artist Login/Signup Toggle -->
+        <div class="auth-toggle">
+          <button class="toggle-btn" id="artistLoginBtn">Login</button>
+          <button class="toggle-btn active" id="artistSignupBtn">Sign Up</button>
+        </div>
+
+        <!-- Artist Login Form -->
+        <div class="form-container" id="artistLoginContainer" style="display: none;">
+          
+          <div class="form-header">
+            <h2>Artist Login</h2>
+            <p>Welcome back! Login to your artist account</p>
+          </div>
+
+          <form class="signup-form" id="artistLoginForm">
+            
+            <div class="form-group">
+              <input type="text" name="username" placeholder="Username" required>
+            </div>
+
+            <div class="form-group">
+              <input type="password" name="password" placeholder="Password" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+
+          <p class="form-note">Demo Login - Username: <strong>artist</strong> | Password: <strong>artist123</strong></p>
+
+        </div>
+
+        <!-- Artist Signup Form -->
+        <div class="form-container" id="artistSignupContainer">
+          
+          <div class="form-header">
+            <h2>Artist Create Account</h2>
+            <p>Apply to join our community of talented artists</p>
+          </div>
+
+          <form class="signup-form" id="artistSignupForm">
+            
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" name="fullname" placeholder="Full Name" required>
+              </div>
+              <div class="form-group">
+                <input type="number" name="age" placeholder="Age" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <input type="number" name="experience" placeholder="Experience (Years)" required>
+              </div>
+              <div class="form-group">
+                <input type="text" name="village" placeholder="Village / Town" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Do you create paintings?</label>
+              <div class="radio-group">
+                <label><input type="radio" name="paintings" value="yes"> Yes</label>
+                <label><input type="radio" name="paintings" value="no"> No</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input type="text" name="paintingType" placeholder="Painting Type (Madhubani, Folk etc.)">
+            </div>
+
+            <div class="form-group">
+              <label>Do you create products?</label>
+              <div class="radio-group">
+                <label><input type="radio" name="products" value="yes"> Yes</label>
+                <label><input type="radio" name="products" value="no"> No</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input type="text" name="productType" placeholder="Products (Handicraft, Decor etc.)">
+            </div>
+
+            <div class="form-group">
+              <label>Do you make clothes?</label>
+              <div class="radio-group">
+                <label><input type="radio" name="clothes" value="yes"> Yes</label>
+                <label><input type="radio" name="clothes" value="no"> No</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input type="text" name="clothesType" placeholder="Clothes Type (Saree, Kurti etc.)">
+            </div>
+
+            <div class="form-group">
+              <textarea name="about" rows="4" placeholder="About your art" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Create Account</button>
+          </form>
+
+          <p class="form-note">Note: Your application will be reviewed by our team. We will contact you within 2-3 business days.</p>
+
+        </div>
+
+      </div>
+
+      <!-- CUSTOMER SECTION -->
+      <div class="form-wrapper" id="customerWrapper" style="display: none;">
+        
+        <!-- Customer Login/Signup Toggle -->
+        <div class="auth-toggle">
+          <button class="toggle-btn" id="customerLoginBtn">Login</button>
+          <button class="toggle-btn active" id="customerSignupBtn">Sign Up</button>
+        </div>
+
+        <!-- Customer Login Form -->
+        <div class="form-container" id="customerLoginContainer" style="display: none;">
+          
+          <div class="form-header">
+            <h2> Customer Login</h2>
+            <p>Welcome back! Login to continue shopping</p>
+          </div>
+
+          <form class="signup-form" id="customerLoginForm">
+            
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="form-group">
+              <input type="password" name="password" placeholder="Password" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+
+          <p class="form-note">Demo Login - Email: <strong>customer@test.com</strong> | Password: <strong>customer123</strong></p>
+
+        </div>
+
+        <!-- Customer Signup Form -->
+        <div class="form-container" id="customerSignupContainer">
+          
+          <div class="form-header">
+            <h2> Customer Create Account</h2>
+            <p>Join us to discover authentic Bihar art</p>
+          </div>
+
+          <form class="signup-form" id="customerSignupForm">
+            
+            <div class="form-group">
+              <input type="text" name="fullname" placeholder="Full Name" required>
+            </div>
+
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="form-group">
+              <input type="tel" name="phone" placeholder="Phone Number" required>
+            </div>
+
+            <div class="form-group">
+              <input type="password" name="password" placeholder="Password" required>
+            </div>
+
+            <div class="form-group">
+              <input type="text" name="interest" placeholder="Interest (Art, Culture, Painting)">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" name="city" placeholder="City" required>
+              </div>
+              <div class="form-group">
+                <input type="text" name="state" placeholder="State" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input type="text" name="country" placeholder="Country" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Create Account</button>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3 class="footer-logo">RANG<span>.IN</span></h3>
+        <p>Bringing the ancient heritage of Mithila to the modern world. Every piece tells a story, every purchase empowers an artist.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>QUICK LINKS</h4>
+        <ul class="footer-links">
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="artists.html">Our Artists</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>NEWSLETTER</h4>
+        <p>Subscribe to get updates on new collections and artist stories.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit" class="btn-join">Join</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2025 <rang class="in">rang.in</rang> All rights reserved. Made with love in rang.</p>
+    </div>
+  </footer>
+
+  <script src="js/login.js"></script>
+</body>
+</html>

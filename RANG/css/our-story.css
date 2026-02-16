@@ -1,0 +1,167 @@
+/* Our Story Page Styles */
+
+/* Story Hero */
+.story-hero {
+  background: linear-gradient(135deg, #f5f0e8 0%, #e8dcc8 100%);
+  padding: 4rem 2rem 3rem;
+  text-align: center;
+}
+
+.story-title {
+  font-size: 3.5rem;
+  color: #991b1e;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.story-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Story Content */
+.story-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+/* Story Section */
+.story-section {
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #991b1e;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.section-content p {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* Timeline */
+.timeline-section {
+  background: #f5f0e8;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  margin-top: 3rem;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 3rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #991b1e;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -3.4rem;
+  top: 0.3rem;
+  width: 20px;
+  height: 20px;
+  background: #991b1e;
+  border: 4px solid #f5f0e8;
+  border-radius: 50%;
+}
+
+.timeline-content h3 {
+  font-size: 1.3rem;
+  color: #991b1e;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.timeline-content p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* Story CTA */
+.story-cta {
+  background: linear-gradient(135deg, #991b1e 0%, #7a1518 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  margin-top: 4rem;
+}
+
+.story-cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.cta-text {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: #c17817;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .story-title {
+    font-size: 2rem;
+  }
+  
+  .story-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
+  }
+  
+  .section-content p {
+    font-size: 1rem;
+  }
+  
+  .timeline {
+    padding-left: 2rem;
+  }
+  
+  .timeline-marker {
+    left: -2.4rem;
+  }
+  
+  .timeline-content h3 {
+    font-size: 1.1rem;
+  }
+  
+  .story-cta h2 {
+    font-size: 1.6rem;
+  }
+  
+  .cta-text {
+    font-size: 1.1rem;
+  }
+}
